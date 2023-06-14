@@ -646,10 +646,6 @@ ul, ol {
   About US
 -----------------------*/
 
-.aboutus-section{
-	background: #f9f9f9;
-}
-
 .about-text {
 	text-align: center;
 	padding: 0 35px;
@@ -700,6 +696,31 @@ ul, ol {
 .service-item:hover i {
 	color: #ffffff;
 }
+
+.service-item img {
+	width: 75px;
+}
+
+.service-item .hover-img, .service-item .gymhover-img, .service-item .gameshover-img {
+	display: none;
+}
+
+.service-item:hover .original-img {
+	display: none;
+}
+
+.pool:hover .hover-img {
+	display: inline-block;
+}
+
+.gym:hover .gymhover-img {
+	display: inline-block;
+}
+
+.games:hover .gameshover-img {
+	display: inline-block;
+}
+
 .service-item:hover h4 {
 	color: #ffffff;
 }
@@ -744,7 +765,7 @@ html{
 .hp-room-section {
     padding-bottom: 60px;
 	background: #f9f9f9;
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .hp-room-items {
@@ -807,15 +828,36 @@ html{
 	background: #ffffff;
 }
 /*---------------------
-  aboutgoa section
+  tariff section
 -----------------------*/
-
+#tariff {
+	background: #f9f9f9;
+}
+#tariff th{
+	padding: 20px 15px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 12px;
+	/* color: #fff; */
+	text-transform: uppercase;
+  }
+  #tariff .tblhdr{
+	background-color: #009DFF;
+	font-weight: 800;
+  }
+  #tariff td{
+	padding: 15px;
+	text-align: left;
+	vertical-align:middle;
+	font-weight: 300;
+	font-size: 12px;
+  }
 /*---------------------
   reservation section
 -----------------------*/
 .reservation-section {
     padding-bottom: 60px;
-	background: #f9f9f9;
+	background: #ffffff;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -826,7 +868,7 @@ html{
 -----------------------*/
 
 .testimonial-section {
-	background: #f9f9f9;
+	background: #ffffff;
 }
 .testimonial-section .section-title {
 	margin-bottom: 30px;
@@ -1912,6 +1954,7 @@ html{
 -----------------------*/
 
 .contact-section {
+	background: #f9f9f9;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
@@ -1996,7 +2039,6 @@ html{
 	display: inline-block;
 }
 .map {
-	height: 470px;
 	-webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
 	box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
 	margin-top: 75px;
