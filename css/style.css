@@ -760,7 +760,7 @@ ul, ol {
 	width: 75px;
 }
 
-.service-item .hover-img, .service-item .gymhover-img, .service-item .gameshover-img {
+.service-item .hover-img, .service-item .gymhover-img, .service-item .gameshover-img, .service-item .carrenthover-img, .service-item .doctorhover-img, .service-item .laundryhover-img {
 	display: none;
 }
 
@@ -900,12 +900,12 @@ html{
 	text-align: left;
 	font-weight: 500;
 	font-size: 12px;
-	/* color: #fff; */
 	text-transform: uppercase;
   }
   #tariff .tblhdr{
 	background-color: #009DFF;
 	font-weight: 800;
+	color: #fff;
   }
   #tariff td{
 	padding: 15px;
