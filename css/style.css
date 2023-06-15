@@ -264,6 +264,49 @@ ul, ol {
 /*---------------------
   Header
 -----------------------*/
+#paynowBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 17px;
+	border: none;
+	outline: none;
+	background-color: #009DFF;
+	color: white;
+	cursor: pointer;
+	padding: 12px;
+	border-radius: 4px;
+  }
+  
+  #paynowBtn:after {
+	background-color: #009DFF;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+	animation-name: blink;
+	animation-duration: 1.3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes blink {
+	0% {
+	  transform:scale3d(1,1,1);
+	  opacity: 0.8;
+	}
+	100% {
+	  transform:scale3d(1.1,1.3,1.1);
+	  opacity:0;
+	}
+  }
 
 .header-section.header-normal .menu-item {
 	-webkit-box-shadow: 0px 12px 15px rgba(36, 11, 12, 0.05);
@@ -494,7 +537,22 @@ ul, ol {
 /*---------------------
   Hero
 -----------------------*/
-
+.overlay {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	opacity:1;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	z-index: 2;
+  }
 .hero-section {
 	position: relative;
 	padding-top: 60px;
@@ -619,6 +677,7 @@ ul, ol {
 	bottom: 23px;
 	width: 100%;
 	text-align: center;
+	z-index: 999;
 }
 .hero-slider.owl-carousel .owl-dots button {
 	height: 6px;
@@ -833,6 +892,9 @@ html{
 #tariff {
 	background: #f9f9f9;
 }
+#tariff .section-title {
+	margin-bottom: 50px;
+}
 #tariff th{
 	padding: 20px 15px;
 	text-align: left;
@@ -851,6 +913,7 @@ html{
 	vertical-align:middle;
 	font-weight: 300;
 	font-size: 12px;
+	border-bottom:1px solid rgba(0,0,0,.055);
   }
 /*---------------------
   reservation section
@@ -858,6 +921,9 @@ html{
 .reservation-section {
     padding-bottom: 60px;
 	background: #ffffff;
+    padding-left: 300px;
+    padding-right: 300px;
+
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -1984,6 +2050,7 @@ html{
 	color: #aaaab3;
 	padding-left: 25px;
 	margin-bottom: 28px;
+	background: #f9f9f9;
 }
 
 .contact-form input::-webkit-input-placeholder {
@@ -2011,6 +2078,7 @@ html{
 	padding-top: 12px;
 	margin-bottom: 33px;
 	resize: none;
+	background: #f9f9f9;
 }
 .contact-form textarea::-webkit-input-placeholder {
 	color: #aaaab3;

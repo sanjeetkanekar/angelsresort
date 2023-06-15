@@ -47,15 +47,28 @@
         }
     };
     
-     $("#roomtype").change(function () {
-        var roomtype = $(this).val();
-        var pricetextBox = document.getElementById("price");
-        if (roomtype == "Standard") {
-            pricetextBox.value = "3500";
-        } else {
-            pricetextBox.value = "5000";
-        }
-    });
+    //  $("#roomtype").change(function () {
+    //     var roomtype = $(this).val();
+    //     var pricetextBox = document.getElementById("price");
+    //     if (roomtype == "Standard") {
+    //         pricetextBox.value = "3500";
+    //     } else {
+    //         pricetextBox.value = "5000";
+    //     }
+    // });
+
+    let mybutton = document.getElementById("paynowBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
     /*------------------
         Preloader
