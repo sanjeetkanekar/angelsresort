@@ -1,74 +1,52 @@
 'use strict';
 
 (function ($) {
-
-    var sticky = $('.sticky');
-    var contentOffset;
-
-    var sticky = $('.sticky');
-    var contentOffset;
-    var nav_height;
-
-    if (sticky.length) {
-
-        if (sticky.data('offset')) {
-            contentOffset = sticky.data('offset');
-        } else {
-            contentOffset = sticky.offset().top;
-        }
-        nav_height = sticky.height();
-    }
-
-    var scrollTop = $(window).scrollTop();
-    var window_height = $(window).height();
-    var doc_height = $(document).height();
-
-    $(window).bind('resize', function () {
-        scrollTop = $(window).scrollTop();
-        window_height = $(window).height();
-        doc_height = $(document).height();
-        navHeight();
-    });
-
-    $(window).bind('scroll', function () {
-        stickyNav();
-    });
-
-    function navHeight() {
-        sticky.css('max-height', window_height + 'px');
-    }
-
-    function stickyNav() {
-        scrollTop = $(window).scrollTop();
-        if (scrollTop > contentOffset) {
-            sticky.addClass('fixed');
-        } else {
-            sticky.removeClass('fixed');
-        }
-    };
     
-    //  $("#roomtype").change(function () {
-    //     var roomtype = $(this).val();
-    //     var pricetextBox = document.getElementById("price");
-    //     if (roomtype == "Standard") {
-    //         pricetextBox.value = "3500";
-    //     } else {
-    //         pricetextBox.value = "5000";
-    //     }
-    // });
+     /*------------------
+        Sticky header
+    --------------------*/
 
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var headerheight = document.getElementById('menu').offsetHeight;
+        var nav = document.getElementById('lowernav');
+    
+        if (scroll >= headerheight && screen.width > 990 ) {          
+            nav.classList.add("background-header");
+        } else {
+            nav.classList.remove("background-header");
+        }
+      });
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var headerheight = document.getElementById('lowernav').offsetHeight;
+        var nav = document.getElementById('currentsearch');
+        var distanceTop = document.getElementById('roomdetails').getBoundingClientRect().top;
+    
+        if (scroll > distanceTop) {        
+            nav.classList.add("recentsearch-header");
+            nav.style.top = headerheight + "px";
+        } else {
+            nav.classList.remove("recentsearch-header");
+            nav.style.top = 0;
+        }
+      });
+    /*------------------
+        Pay Now button
+    --------------------*/
     let mybutton = document.getElementById("paynowBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
 
     /*------------------
         Preloader

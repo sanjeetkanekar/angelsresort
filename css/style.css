@@ -261,6 +261,13 @@ ul, ol {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+
+.modal img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 /*---------------------
   Header
 -----------------------*/
@@ -308,9 +315,46 @@ ul, ol {
 	}
   }
 
+  .header-section .watsapp {
+	width: 23px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .offcanvas-menu-wrapper .watsapp {
+	width: 23px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
 .header-section.header-normal .menu-item {
 	-webkit-box-shadow: 0px 12px 15px rgba(36, 11, 12, 0.05);
 	box-shadow: 0px 12px 15px rgba(36, 11, 12, 0.05);
+}
+
+.background-header {
+	background-color: #fff!important;
+	/* height: 80px!important; */
+	position: fixed!important;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.03);
+	transition: ease-in 0.1s;
+}
+
+.recentsearch-header {
+	background-color: #009DFF!important;
+	/* height: 80px!important; */
+	position: fixed!important;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.03);
+	transition: ease-in 0.1s;
+	z-index: 1;
 }
 .top-nav {
 	border-bottom: 1px solid #e5e5e5;
@@ -362,7 +406,7 @@ ul, ol {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	padding: 16px 28px 15px;
+	padding: 11px 16px 11px;
 	background: #009DFF;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -533,6 +577,10 @@ ul, ol {
 }
 .offcanvas-menu-wrapper {
 	display: none;
+}
+
+.room-detailsmenu{
+    box-shadow: 0px 12px 15px rgb(36 11 12 / 5%);
 }
 /*---------------------
   Hero
@@ -780,6 +828,18 @@ ul, ol {
 	display: inline-block;
 }
 
+.carrent:hover .carrenthover-img {
+	display: inline-block;
+}
+
+.laundry:hover .laundryhover-img {
+	display: inline-block;
+}
+
+.doctor:hover .doctorhover-img {
+	display: inline-block;
+}
+
 .service-item:hover h4 {
 	color: #ffffff;
 }
@@ -817,7 +877,7 @@ html{
 .room-text {
     text-align: center;
     padding: 0 35px;
-    margin: 50px 0px;
+    margin: 20px 0px;
 
 }
 
@@ -934,7 +994,7 @@ html{
 -----------------------*/
 
 .testimonial-section {
-	background: #ffffff;
+	background: #f9f9f9;
 }
 .testimonial-section .section-title {
 	margin-bottom: 30px;
@@ -1144,7 +1204,7 @@ html{
 
 .breadcrumb-section {
 	padding-top: 70px;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 }
 .breadcrumb-text {
 	text-align: center;
@@ -1391,6 +1451,12 @@ html{
 	padding-top: 0;
 	padding-bottom: 80px;
 }
+
+.room-details-section .container {
+	border: 1px solid rgba(0,0,0,.055);
+    padding: 20px 20px;
+}
+
 .room-details-item {
 	margin-bottom: 50px;
 }
@@ -1405,31 +1471,49 @@ html{
 	color: #19191a;
 	float: left;
 }
+.room-details-item .rd-text .rd-title p {
+	display: inline-block;
+}
 .room-details-item .rd-text .rd-title .rdt-right {
 	float: right;
 	text-align: right;
 }
-.room-details-item .rd-text .rd-title .rdt-right .rating {
+.room-details-item .rd-text .rdt-right .rating {
 	display: inline-block;
-	margin-right: 25px;
-	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
 }
-.room-details-item .rd-text .rd-title .rdt-right .rating i {
+.room-details-item .rd-text .rdt-right .rating i {
 	color: #f5b917;
 }
-.room-details-item .rd-text .rd-title .rdt-right a {
-	display: inline-block;
+.room-details-item .bookindetails{
+	margin-bottom: 16px;
+	border-bottom: 1px solid rgba(0,0,0,.055);
+    padding-bottom: 5px;
+}
+
+.room-details-item .bookindetails span{
+	font-size: 15px;
+    font-weight: bold;
+}
+.room-details-item .bookindetails .bookingdetailsspecific:not(:last-child) {
+	border-right: 1px solid rgba(0,0,0,.055);
+}
+.room-details-item .rd-text button {
 	color: #ffffff;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 700;
 	background: #009DFF;
 	padding: 14px 28px 13px;
+	border: none;
+	float: right;
+    margin-right: 15px;
 }
 .room-details-item .rd-text h2 {
 	color: #009DFF;
 	font-weight: 700;
-	margin-bottom: 25px;
+	text-align: right;
 }
 .room-details-item .rd-text h2 span {
 	font-family: "Cabin", sans-serif;
@@ -1443,54 +1527,80 @@ html{
 .room-details-item .rd-text table tbody tr td {
 	font-size: 16px;
 	color: #19191a;
-	line-height: 36px;
+	line-height: 30px;
 }
 .room-details-item .rd-text table tbody tr td.r-o {
+	width: 100px;
+	color: #707079;
+}
+
+.room-details-item .rd-text table tbody tr td.payment {
+	font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.room-details-item .rd-text .costbreakup {
+	margin-bottom: 32px;
+}
+
+.room-details-item .rd-text .costbreakup tbody tr td {
+	font-size: 13px;
+	color: #707079;
+	line-height: 30px;
+}
+.room-details-item .rd-text .costbreakup tbody tr td.r-o {
 	width: 120px;
 	color: #707079;
 }
 .room-details-item .rd-text p {
 	color: #707079;
+	font-weight: bold;
 }
 .room-details-item .rd-text p.f-para {
-	margin-bottom: 22px;
+	margin: 10px 0px;
 }
-.rd-reviews {
-	padding-top: 55px;
-	border-top: 1px solid #e5e5e5;
-	margin-bottom: 50px;
+
+.currentsearch-section .container, .currentsearch-mobsection .container{
+	background: #009DFF;
+    margin-bottom: 35px;
+    /* padding: 28px; */
+    color: white;
+    /* height: 136px; */
+    padding-left: 29px;
+	z-index: 99;
 }
-.rd-reviews h4 {
-	color: #19191a;
-	letter-spacing: 1px;
-	margin-bottom: 45px;
+
+.currentsearch-section .contact-form input, .currentsearch-mobsection .contact-form input{
+	height: 40px;
+    margin-bottom: 20px;
 }
-.rd-reviews .review-item {
-	margin-bottom: 32px;
+
+.currentsearch-section .contact-form .box, .currentsearch-mobsection .contact-form .box{
+	height: 40px;
+    margin-bottom: 20px;
 }
-.rd-reviews .review-item .ri-pic {
-	float: left;
-	margin-right: 30px;
+
+.currentsearch-section label, .currentsearch-mobsection label {
+	margin-top: 0.5rem;
 }
-.rd-reviews .review-item .ri-pic img {
-	height: 70px;
-	width: 70px;
-	border-radius: 50%;
+
+.currentsearch-section .searchbtn, .currentsearch-mobsection .searchbtn {
+	margin-top: 14%;
+    background: #f9f9f9;
+    color: #009DFF;
 }
-.rd-reviews .review-item .ri-text {
-	overflow: hidden;
-	position: relative;
-	padding-left: 30px;
+
+.currentsearch-section .searchbtn:hover, .currentsearch-mobsection .searchbtn:hover {
+    background: #ffffff;
+	transition: color 0.5s linear 0s;
 }
-.rd-reviews .review-item .ri-text:before {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 1px;
-	height: 100%;
-	background: #e9e9e9;
-	content: "";
+
+.room-details-item .pricesection {
+	right: 30px;
+	padding-right: 0px;
 }
+
 .rd-reviews .review-item .ri-text span {
 	font-size: 12px;
 	color: #009DFF;
@@ -2114,6 +2224,64 @@ html{
 .map iframe {
 	width: 100%;
 }
+
+#nearby img{
+	filter: grayscale(100%);
+	width: 100%;
+}
+
+#nearby img:hover{
+	filter: grayscale(0%);
+}
+
+ #nearby .nearbyoverlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background:rgba(0,0,0,0.6);
+}
+
+#nearby .nearbydiv:hover .nearbyoverlay{
+	opacity: 1;
+  }
+
+  #nearby .nearbydiv:hover img{
+	filter: grayscale(0%);
+  }
+
+  #nearby .nearbyoverlay .text {
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	text-decoration: underline;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+  #nearby .nearbyoverlay span {
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+  #nearby .section-title{
+	margin-bottom: 30px;
+  }
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
@@ -2129,6 +2297,12 @@ html{
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.reservation-section{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 /* Medium Device: 1200px */
@@ -2171,7 +2345,7 @@ html{
 		visibility: visible;
 	}
 	.canvas-open {
-		position: absolute;
+		position: fixed;
 		right: 40px;
 		top: 25px;
 		font-size: 22px;
@@ -2403,6 +2577,31 @@ html{
 	.hero-text {
 		margin-bottom: 40px;
 	}
+	#lowernav .logo img {
+		width: 40%;
+    	max-width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.checkout-section .checkoutrightsection {
+		margin-left: 0px!important;
+	}
+
+	.fa-social {
+		text-align: center;
+	}
+
+	.footer-contact{
+		width: 60%;
+	}
+
+	.footer-usefulllinks{
+		width: 40%;
+	}
+
+	.footer-section img {
+		width: 50%;
+	}
 }
 /* Tablet Device: 768px */
 
@@ -2420,6 +2619,68 @@ html{
 		margin-bottom: 15px;
 	}
 }
+
+@media only screen and (min-width: 991px) {
+	.bookingmodify{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.currentsearch-section {
+		display: none;
+	}
+
+	.currentsearch-mobsection .searchbtn {
+		margin: 10px 0px 20px;
+	}
+
+	.bookingmodify {
+		font-size: 16px;
+		font-weight: 600;
+		color: #009DFF;
+		width: 1130px;
+		margin: 0px auto 28px;
+		cursor: pointer;
+		text-decoration: none;
+		padding-left: 20px;
+	}
+
+	.bookingmodify:hover {
+		text-decoration: none;
+    	outline: none;
+    	color: #009DFF;
+	}
+
+	.checkout-section .checkoutleftsection .bldtxt {
+		width: 50%;
+	}
+
+	.checkout-section .checkoutleftsection .bldlowertxt {
+		width: 50%;
+	}
+
+	.checkout-section .checkoutleftsection {
+		margin-bottom: 50px!important;
+	}
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1200px){
+
+	#currentsearch button {
+		font-size: 10px;
+		margin-top: 15%;
+	}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+
+	#currentsearch button {
+		font-size: 10px;
+		margin-top: 19%;
+	}
+}
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
@@ -2431,7 +2692,7 @@ html{
 	}
 	.room-details-item .rd-text .rd-title h3 {
 		float: none;
-		margin-bottom: 30px;
+		/* margin-bottom: 30px; */
 	}
 	.room-details-item .rd-text .rd-title .rdt-right {
 		float: none;
@@ -2459,6 +2720,21 @@ html{
 	}
 }
 /* Small Mobile: 320px */
+
+@media only screen and (max-width: 768px) {
+
+	#roomdetails .img-container {
+		margin-bottom: 30px;
+	}
+
+	/* #roomdetails .bookingdetails, #roomdetails .pricedetails {
+		flex-wrap: nowrap !important;
+	} */
+
+	#roomdetails .bookingdetailsspecific {
+		width: auto;
+	}
+}
 
 @media only screen and (max-width: 479px) {
 	.footer-section .copyright-option ul li {
@@ -2498,4 +2774,309 @@ html{
 	.blog-details-text .comment-option .single-comment-item .sc-text a {
 		margin-bottom: 10px;
 	}
+
+	.room-details-item .rd-text table {
+		width: 100%;
+	}
+	.room-details-item .rd-text table tbody tr td {
+		font-size: 14px;
+	}
+
+	.room-details-item .rd-text table .righttd {
+		text-align: right;
+	}
+	
+	.room-details-item .rd-text h2 {
+		text-align: left;
+	}
+
+	.room-details-item .pricesection {
+		right: 0;
+	}
+
+	.room-details-item .rd-text button {
+		float: left;
+	}
+
+	#roomdetails .bookingdetailsspecific {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+	.testimonial-slider .ts-item p {
+		font-size: 15px;
+	}
+
+	.breadcrumb-text h2, .test-section-title h2 {
+		font-size: 30px;
+	}
+
+	.footer-section .footer-text .ft-usefullinks h6, .footer-section .footer-text .ft-contact h6 {
+		font-size: 12px;
+	}
+	.footer-section .footer-text .ft-contact ul li, .footer-section .footer-text .ft-usefullinks ul li {
+		font-size: 12px;
+	}
+
+	.footer-section .footer-text .ft-usefullinks ul li a {
+		font-size: 12px;
+	}
+}
+
+
+.checkout-breadcrumb-section{
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.modify-section {
+	font-size: 16px;
+    font-weight: 600;
+    color: #009DFF;
+    width: 100%;
+    margin: 0px auto 28px;
+	cursor: pointer;
+}
+
+.modify-section .backicon {
+	margin-right: 5px;
+    vertical-align: text-bottom;
+    outline: 0px;
+    pointer-events: auto;
+}
+
+.modify-section .backicon svg {
+	fill: #009DFF;
+    transform: rotate(180deg);
+    height: 16px;
+}
+
+  .checkout-section .container {
+	padding: 5px 20px 15px 20px;
+  }
+
+
+
+  .checkout-section .checkoutleftsection {
+    padding: 20px;
+	background: rgb(249, 249, 251);
+	margin-bottom: 150px;
+  }
+
+  .checkout-section .checkoutleftsection img {
+    margin-bottom: 15px;
+  }
+
+  .checkout-section .checkoutleftsection .rating {
+	margin-bottom: 5px;
+  }
+
+  .checkout-section .checkoutleftsection .rating i {
+	color: #f5b917;
+	font-size: 16px;
+}
+
+.checkout-section .checkoutleftsection .bldtxt {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(12, 10, 21);
+    margin-bottom: 10px;
+}
+
+.checkout-section .checkoutleftsection .righttext
+{
+	text-align: right;
+}
+
+.checkout-section .checkoutleftsection .calendar {
+	border-right: 0.5px solid rgb(240, 240, 240) ;
+}
+
+.checkout-section .checkoutleftsection .roomdetails {
+    border-width: 0px 0px 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 240);
+	padding-bottom:10px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.checkout-section .checkoutleftsection table {
+	width: 100%;
+}
+
+.checkout-section .checkoutleftsection .r-o {
+	font-size: 15px;
+    line-height: 2;
+    color: rgb(34, 34, 34);
+}
+
+.checkout-section .checkoutleftsection .r-b {
+	font-size: 15px;
+    line-height: 2;
+    color: rgb(12, 10, 21);
+	font-weight: bold;
+	text-align: right;
+}
+.checkout-section .checkoutleftsection .payment {
+	color: rgb(34, 34, 34);
+	font-size: 17px;
+	line-height: 1.56;
+	border-top: 1px solid rgb(240, 240, 240);
+	padding-top: 20px;
+}
+
+.checkout-section .checkoutleftsection .lastprice{
+	padding-bottom: 20px;
+}
+
+.checkout-section .checkoutleftsection .ammount{
+	font-weight: bold;
+	text-align: right;
+}
+
+.checkout-section .checkoutrightsection {
+	border: 1px solid rgba(122, 122, 122, 0.17);
+	border-radius: 4px;
+	padding: 20px;
+	margin-left: 30px;
+	margin-bottom: 150px;
+}
+
+.checkout-section .checkoutrightsection .formtitle {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	padding: 14px 24px;
+	color: rgb(0, 0, 0);
+	background: rgb(249, 249, 251);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.6;
+	}
+
+.checkout-section .checkoutrightsection .chkoutformsection {
+	padding: 14px 24px;
+}
+
+.checkout-section .checkoutrightsection .formsubtitle {
+	font-size: 14px;
+	line-height: 1.7;
+	padding: 14px 24px;
+}
+
+.checkout-section .checkoutrightsection .chkoutformsection label {
+	margin: 0 0 9px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.checkout-section .checkoutrightsection .chkoutformsection .comments {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.checkout-section .checkoutrightsection .chkoutformsection .checkoutbtn{
+	padding: 12px 14px;
+	width: 100%;
+}
+
+.checkout-section .checkoutrightsection .chkoutformsection .btn {
+	background-color: #009DFF;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+  }
+  
+.checkout-section .checkoutrightsection .chkoutformsection .btn:hover {
+	background-color: #45a049;
+  }
+  
+  .checkout-section .checkoutrightsection .chkoutformsection input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  .checkout-section .checkoutrightsection .chkoutformsection label {
+	margin-bottom: 10px;
+	display: block;
+  }
+    
+  .checkout-section .checkoutrightsection .chkoutformsection .btn {
+	width: 100%;
+	background-color: #009DFF;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+  }
+  
+  .checkout-section .checkoutrightsection .chkoutformsection .btn:hover {
+	background-color:#0081df;
+  }
+  
+  .checkout-section a {
+	color: #2196F3;
+  }
+  
+  .checkout-section hr {
+	border: 1px solid lightgrey;
+  }
+  
+  .checkout-section span.price {
+	float: right;
+	color: grey;
+  }
+  
+#paymentsuccessModal .modal-content .modal-header{
+	background:#0081df;
+	width: 100%;
+    color: white;
+    overflow: hidden;
+    min-height: 250px;
+    position: relative;
+    padding: 40px 0;
+	display: block;
+	text-align: center;
+}
+
+#paymentsuccessModal .modal-content .modal-header p {
+	margin-bottom: 30px;
+}
+
+#paymentsuccessModal .modal-content .modal-header p svg {
+	fill: white;
+	left: 0;
+}
+
+  
+#paymentsuccessModal h4{
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-shadow: 0 2px rgba(128, 128, 128, 0.6);
+	color: white;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#paymentsuccessModal button {
+	background:#0081df;
+	color: white;
 }
