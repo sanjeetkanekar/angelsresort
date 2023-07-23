@@ -90,7 +90,7 @@
                 $_SESSION["extrapax"] = $extrapax;
                 $_SESSION["rooms"] = $rooms;
             
-                $extrapaxbasetariff = 1000;
+                // $extrapaxbasetariff = 1000;
                 $gstpercentage = 12;
                 $rooms_vacant = true;
             
@@ -111,12 +111,15 @@
                             // $rooms_available = $row['rooms_available'];
                             if ($days == 1) {
                                 $roombaserate = $row['rate'];
+                                $extrapaxbasetariff = $row['extra_pax'];
                                 break;
                             }
                             $roombaserate = $row['rate'];
+                            $extrapaxbasetariff = $row['extra_pax'];
                             // $rooms_booked = $row['rooms_booked'];
                         } else {
                             $roombaserate = $row['rate'];
+                            $extrapaxbasetariff = $row['extra_pax'];
                             $rooms_vacant = false;
                         }
                     }     
@@ -278,7 +281,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 img-container">
-                        <img src="img/room1.jpg" alt="">
+                        <img src="img/gallery/gallery4.jpg" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="room-details-item">

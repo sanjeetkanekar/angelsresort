@@ -101,7 +101,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <img src="img/room1.jpg" alt="">
+                                    <img src="img/gallery/gallery4.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">

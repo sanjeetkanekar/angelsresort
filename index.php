@@ -210,7 +210,7 @@
                 <div class="hp-room-items">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <div class="hp-room-item set-bg" data-setbg="img/room/room-b2.jpg">
+                            <div class="hp-room-item set-bg" data-setbg="img/standard_room.png">
                                 <div class="hr-text">
                                     <h3>Standard Room</h3>
                                     <h2>Rs. 3500<span>/ Pernight</span></h2>
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <div class="hp-room-item set-bg" data-setbg="img/room/room-b2.jpg">
+                            <div class="hp-room-item set-bg" data-setbg="img/deluxe_room.png">
                                 <div class="hr-text">
                                     <h3>Deluxe Room</h3>
                                     <h2>Rs. 5000<span>/ Pernight</span></h2>
