@@ -909,7 +909,7 @@ html{
 	position: absolute;
 	left: 45px;
 	right: 25px;
-	bottom: -250px;
+	bottom: -260px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
@@ -2223,6 +2223,11 @@ html{
 }
 .map iframe {
 	width: 100%;
+}
+
+#nearby .nearbydiv {
+	padding-left: 0;
+    padding-right: 0;
 }
 
 #nearby img{

@@ -9,7 +9,7 @@
         <meta name="keywords" content="Sona, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Angels Resort</title>
+        <title>Angels Resort Goa India</title>
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
@@ -44,10 +44,10 @@
                         <div class="col-lg-6">
                             <div class="tn-right">
                                 <div class="top-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -174,11 +174,11 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                             <label for="">Check-in Date:</label>
-                            <input name="indate" type="date" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>">
+                            <input name="indate" type="date" class="mydate" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>">
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                             <label for="">Check-out Date:</label>
-                            <input name="outdate" type="date" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>">
+                            <input name="outdate" type="date" class="mydate" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>">
                         </div>
                         <div class="col-lg-1 col-md-6 col-sm-6 col-xs-3">
                             <label for="">Adults:</label>
@@ -336,10 +336,10 @@
                                         <p>Room Details:</p>
                                         <table>
                                             <tbody>
-                                                <tr>
+                                                <!-- <tr>
                                                     <td class="r-o">Size:</td>
                                                     <td>30 ft</td>
-                                                </tr>
+                                                </tr> -->
                                                 <tr>
                                                     <td class="r-o">Capacity:</td>
                                                     <td>Max Adults 2</td>
@@ -402,12 +402,12 @@
             </div>
         </section>
         <!-- Room Details Section End -->
-        <!-- Testimonial Section Begin -->
-        <section id="testimonial" class="testimonial-section spad">
+                <!-- Testimonial Section Begin -->
+                <section id="testimonial" class="testimonial-section spad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title test-section-title">
+                        <div class="section-title">
                             <span>Testimonials</span>
                             <h2>What Customers Say?</h2>
                         </div>
@@ -416,8 +416,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="testimonial-slider owl-carousel">
-                            <div class="ts-item">
-                                <p>Was amazed to see such a huge space with so many cottages. Very clean and well maintained. Lot of trees and plants around. Attached restaurant served good food. There are options to eat outside as well as this is right next to the main road. 20-30 mins drive from the calagunte Baga anjuna et al beaches but i preferred staying here in peace away from the crowd and mayhem and driving down. Had my own car. Panaji was just 20 mins away. Good service.</p>
+                        <div class="ts-item">
+                                <p>Lovely place. Rooms n service was excellent. Girish at the receptionist was the best. Always smiling n greeting people. Moreover. The owner Mr. REBELLO N his manager Mr.shankar were very good n friendly. Highly recommended n will definitely come back again.</p>
                                 <div class="ti-author">
                                     <div class="rating">
                                         <i class="icon_star"></i>
@@ -427,12 +427,12 @@
                                         <i class="icon_star"></i>
                                         <!-- <i class="icon_star-half_alt"></i> -->
                                     </div>
-                                    <h5> - TravelAway111</h5>
+                                    <h5> - Joyce Passanha</h5>
                                 </div>
-                                <img src="img/testimonial-logo.png" alt="">
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
                             </div>
                             <div class="ts-item">
-                                <p>Wonderful & peaceful place to enjoy a good breakfast or full meal. Short but exquisite menu. Ample place for social distance. Soothing Live music in the evening. Excellent service, combined with equally great food. Had Chinese veg and non veg cuisine. Enjoyed it. An evening well spent. Our steward for the evening Mr. Ladu served us well with a beautiful smile. Also pleasently surprised by the complimentary desert. Thank you "Angeles Resort".</p>
+                                <p>Superb place to stay in Goa. very clean place. very polite staff. good bar and good food served. outside the place everything available easily at your reach. pls. Thanks for a good managerial staff who look to the nitty nitty things of their guests.</p>
                                 <div class="ti-author">
                                     <div class="rating">
                                         <i class="icon_star"></i>
@@ -442,9 +442,54 @@
                                         <i class="icon_star"></i>
                                         <!-- <i class="icon_star-half_alt"></i> -->
                                     </div>
-                                    <h5> - madan d</h5>
+                                    <h5> - Sunil Menezes</h5>
                                 </div>
-                                <img src="img/testimonial-logo.png" alt="">
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>We have been regular guests at this resort since 2014 and we love it. It has always been a great experience. Good cleanliness, hygiene, great food, beautiful property.</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Meenakshi Gokhale</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>My experience with angels resort was awesome and very positive. I strongly recommend this place to my friends and family. Food was great but I prefer to try local delegacy if you order curry of any type ask them to make it in coconut curry it was delicious 😋</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Sharta Power</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>This place is situated at a prime spot in Porvorim. It was my first time exploring Angel's resort this Easter, and I was wowed by the way this facility has been maintained. A shout-out to my friend Charlotte Rodrigues for introducing me to this heaven!!.</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Olson Pereira</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -481,10 +526,10 @@
                             <div class="ft-usefullinks">
                                 <h6>Usefull Links</h6>
                                 <ul>
-                                    <li><a class="smoothScroll" href="#services">Facilities</a></li>
-                                    <li><a class="smoothScroll" href="#rooms">Accomodation</a></li>
-                                    <li><a class="smoothScroll" href="#reservation">Reservations</a></li>
-                                    <li><a class="smoothScroll" href="#tariff">Tariff</a></li>
+                                    <li><a class="smoothScroll" href="index.php">Facilities</a></li>
+                                    <li><a class="smoothScroll" href="index.php">Accomodation</a></li>
+                                    <li><a class="smoothScroll" href="index.php">Reservations</a></li>
+                                    <li><a class="smoothScroll" href="index.php">Tariff</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -503,10 +548,10 @@
                         </div>
                         <div class="col-lg-6 text-right">
                             <div class="fa-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>

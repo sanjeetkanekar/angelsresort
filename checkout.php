@@ -9,7 +9,7 @@
         <meta name="keywords" content="Sona, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Angels Resort</title>
+        <title>Angels Resort Goa India</title>
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
@@ -44,10 +44,10 @@
                         <div class="col-lg-6">
                             <div class="tn-right">
                                 <div class="top-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 checkoutrightsection">
-                        <form action="pay.php" method="post">
+                        <form action="paylater.php" method="post">
                             <div class="formtitle">Enter Your Details</div>
                             <div class="formsubtitle"><span>We will use these details to share your booking information</span></div>
                             <div class="row chkoutformsection">
@@ -186,7 +186,7 @@
                                 </div>
                                 <input type="hidden" name="payableamount" id="payableamount" value="<?php echo $_SESSION["grandpayaletotal"];?>">
                                 <div class="checkoutbtn">
-                                    <input type="submit" value="Continue to checkout" class="btn">
+                                    <input type="submit" value="Book Now and Pay Later" class="btn">
                                 </div>
                             </div>
                         </form>
@@ -246,10 +246,10 @@
                         </div>
                         <div class="col-lg-6 text-right">
                             <div class="fa-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>

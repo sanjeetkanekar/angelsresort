@@ -19,8 +19,7 @@
       });
 
       $(window).scroll(function() {
-        if (window.location.pathname !== '/angelsresort/gallery.html') {
-            console.log("hello");
+        if (window.location.pathname !== '/angelsresort/gallery.html' && window.location.pathname !== '/angelsresort/index.php') {
         var scroll = $(window).scrollTop();
         var headerheight = document.getElementById('lowernav').offsetHeight;
         var nav = document.getElementById('currentsearch');
@@ -38,20 +37,20 @@
     /*------------------
         Pay Now button
     --------------------*/
-    if(document.getElementById("paynowBtn")){
-        let mybutton = document.getElementById("paynowBtn");
+    // if(document.getElementById("paynowBtn")){
+    //     let mybutton = document.getElementById("paynowBtn");
 
     // When the user scrolls down 200px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    // window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-    }
+    // function scrollFunction() {
+    //     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    //         mybutton.style.display = "block";
+    //     } else {
+    //         mybutton.style.display = "none";
+    //     }
+    // }
+    // }
     
 
     /*------------------
@@ -237,3 +236,20 @@
     
 
 })(jQuery);
+
+
+$(function(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var minDate= year + '-' + month + '-' + day;
+    
+    $('.mydate').attr('min', minDate);
+});

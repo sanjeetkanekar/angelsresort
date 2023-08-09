@@ -6,7 +6,7 @@
         <meta name="keywords" content="Sona, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Angels Resort</title>
+        <title>Angels Resort Goa India</title>
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <button id="paynowBtn" title="Pay Now" data-toggle="modal" data-target="#myModal">Pay Now</button>
+        <!-- <button id="paynowBtn" title="Pay Now" data-toggle="modal" data-target="#myModal">Pay Now</button> -->
         <!-- Pay Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -95,10 +95,10 @@
                         <div class="col-lg-6">
                             <div class="tn-right">
                                 <div class="top-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -195,15 +195,15 @@
                     <div class="col-lg-12">
                         <div class="section-title">
                             <span>Choose your room</span>
-                            <h2>Accomodations</h2>
+                            <h2>Accommodations</h2>
                         </div>
                     </div>
                 </div>
                 <div class="room-text">
-                    <p class="f-para">Angels Resort boasts of a vibrant cottage styled suites and rooms that are surrounded by well landscaped lawns and and inviting pool for you to relax and unwind.</p>
-                    <p class="s-para">Angels Resorts has 12 split air-conditioned Suites. comprising of a living cum dining area, minibar,a bedroom with attached toilet and shower. Each room is furnished with double or twin beds, refrigerator, Satellite cable network, telephone and an electric geyser for hot Water to make your room a heaven of Relaxation and comfort.</p>
+                    <p class="f-para">Angels Resort boasts of a vibrant cottage styled suites and rooms that are surrounded by well landscaped lawns and inviting pool for you to relax and unwind.</p>
+                    <p class="s-para">Angels Resorts has 12 split air-conditioned Suites comprising of a living cum dining area, minibar, a bedroom with attached toilet and shower. Each room is furnished with double or twin beds, refrigerator, Satellite cable network, telephone and an electric geyser for hot Water to make your room a heaven of Relaxation and comfort.</p>
                     <p class="s-para">Our 37 exquisitely designed well appointed split air-conditioned standard rooms have all the amenities that you enjoy in an elegant modern room. All the rooms overlook the refreshing pool allowing you to unwind from the comforts of your balcony.</p>
-                    <p class="s-para">Angels Resort offers you that personalised touch, so that you have a real pleasurable time with us. Our personnel are rich in experience and offer you the best of their services. If you are not keen in dining out & just want to enjoy your privacy in your own room, just call our room service to serve you in the room.</p>
+                    <p class="s-para">Angels Resort offers you that personalized touch, so that you have a real pleasurable time with us. Our personnel are rich in experience and offer you the best of their services. If you are not keen in dining out & just want to enjoy your privacy in your own room, just call our room service to serve you in the room.</p>
                 </div>
             </div>
             <div class="container-fluid">
@@ -216,13 +216,13 @@
                                     <h2>Rs. 3500<span>/ Pernight</span></h2>
                                     <table>
                                         <tbody>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td class="r-o">Size:</td>
                                                 <td>30 ft</td>
-                                            </tr>
+                                            </tr> -->
                                             <tr>
                                                 <td class="r-o">Capacity:</td>
-                                                <td>Max persion 5</td>
+                                                <td>Max person 3</td>
                                             </tr>
                                             <tr>
                                                 <td class="r-o">Bed:</td>
@@ -234,7 +234,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a href="#" class="primary-btn">More Details</a>
+                                    <a class="smoothScroll primary-btn" href="#reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -245,13 +245,13 @@
                                     <h2>Rs. 5000<span>/ Pernight</span></h2>
                                     <table>
                                         <tbody>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td class="r-o">Size:</td>
                                                 <td>30 ft</td>
-                                            </tr>
+                                            </tr> -->
                                             <tr>
                                                 <td class="r-o">Capacity:</td>
-                                                <td>Max persion 5</td>
+                                                <td>Max person 3</td>
                                             </tr>
                                             <tr>
                                                 <td class="r-o">Bed:</td>
@@ -263,7 +263,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a href="#" class="primary-btn">More Details</a>
+                                    <a class="smoothScroll primary-btn" href="#reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +363,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <span>Tarrif</span>
+                            <span>Tariff</span>
                             <h2>Affordable Luxury: Unforgettable Resort Experience</h2>
                         </div>
                     </div>
@@ -442,10 +442,10 @@
                         <form action="room-details.php" method="post" class="contact-form">
                             <div class="row">
                                 <div class="col-lg-6 col-sm-6">
-                                    <input name="indate" type="text" placeholder="Check-in Date" onfocus="(this.type='date')">
+                                    <input name="indate" value="<?php echo date("d-m-Y"); ?>" class="mydate" type="text" placeholder="Check-in Date" onfocus="(this.type='date')">
                                 </div>
                                 <div class="col-lg-6 col-sm-6">
-                                    <input name="outdate" type="text" placeholder="Check-out Date" onfocus="(this.type='date')">
+                                    <input name="outdate" value="<?php echo date("d-m-Y", strtotime("+1 day")); ?>"class="mydate" type="text" placeholder="Check-out Date" onfocus="(this.type='date')">
                                 </div>
                                 <div class="col-lg-4 col-sm-3">
                                     <select name="noadults" class="box">
@@ -598,8 +598,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="testimonial-slider owl-carousel">
-                            <div class="ts-item">
-                                <p>Was amazed to see such a huge space with so many cottages. Very clean and well maintained. Lot of trees and plants around. Attached restaurant served good food. There are options to eat outside as well as this is right next to the main road. 20-30 mins drive from the calagunte Baga anjuna et al beaches but i preferred staying here in peace away from the crowd and mayhem and driving down. Had my own car. Panaji was just 20 mins away. Good service.</p>
+                        <div class="ts-item">
+                                <p>Lovely place. Rooms n service was excellent. Girish at the receptionist was the best. Always smiling n greeting people. Moreover. The owner Mr. REBELLO N his manager Mr.shankar were very good n friendly. Highly recommended n will definitely come back again.</p>
                                 <div class="ti-author">
                                     <div class="rating">
                                         <i class="icon_star"></i>
@@ -609,12 +609,12 @@
                                         <i class="icon_star"></i>
                                         <!-- <i class="icon_star-half_alt"></i> -->
                                     </div>
-                                    <h5> - TravelAway111</h5>
+                                    <h5> - Joyce Passanha</h5>
                                 </div>
-                                <img src="img/testimonial-logo.png" alt="">
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
                             </div>
                             <div class="ts-item">
-                                <p>Wonderful & peaceful place to enjoy a good breakfast or full meal. Short but exquisite menu. Ample place for social distance. Soothing Live music in the evening. Excellent service, combined with equally great food. Had Chinese veg and non veg cuisine. Enjoyed it. An evening well spent. Our steward for the evening Mr. Ladu served us well with a beautiful smile. Also pleasently surprised by the complimentary desert. Thank you "Angeles Resort".</p>
+                                <p>Superb place to stay in Goa. very clean place. very polite staff. good bar and good food served. outside the place everything available easily at your reach. pls. Thanks for a good managerial staff who look to the nitty nitty things of their guests.</p>
                                 <div class="ti-author">
                                     <div class="rating">
                                         <i class="icon_star"></i>
@@ -624,9 +624,54 @@
                                         <i class="icon_star"></i>
                                         <!-- <i class="icon_star-half_alt"></i> -->
                                     </div>
-                                    <h5> - madan d</h5>
+                                    <h5> - Sunil Menezes</h5>
                                 </div>
-                                <img src="img/testimonial-logo.png" alt="">
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>We have been regular guests at this resort since 2014 and we love it. It has always been a great experience. Good cleanliness, hygiene, great food, beautiful property.</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Meenakshi Gokhale</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>My experience with angels resort was awesome and very positive. I strongly recommend this place to my friends and family. Food was great but I prefer to try local delegacy if you order curry of any type ask them to make it in coconut curry it was delicious 😋</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Sharta Power</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
+                            </div>
+                            <div class="ts-item">
+                                <p>This place is situated at a prime spot in Porvorim. It was my first time exploring Angel's resort this Easter, and I was wowed by the way this facility has been maintained. A shout-out to my friend Charlotte Rodrigues for introducing me to this heaven!!.</p>
+                                <div class="ti-author">
+                                    <div class="rating">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <!-- <i class="icon_star-half_alt"></i> -->
+                                    </div>
+                                    <h5> - Olson Pereira</h5>
+                                </div>
+                                <!-- <img src="img/testimonial-logo.png" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -685,10 +730,10 @@
                         </div>
                         <div class="col-lg-6 text-right">
                             <div class="fa-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
