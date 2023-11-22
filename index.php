@@ -787,7 +787,7 @@
                         <div class="col-lg-4" style="text-align:center;">
                             <div class="co-text">
                                 <p>
-                                    Angels Resort &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+                                    Angels Resort &copy; <?php echo date("Y"); ?> All rights reserved</a>
                                 </p>
                             </div>
                         </div>

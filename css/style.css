@@ -106,7 +106,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: top center;
 }
 
@@ -1806,7 +1806,7 @@ html {
 
 #nearby img {
 	filter: grayscale(100%);
-	width: 100%;
+	/* width: 100%; */
 }
 
 #nearby img:hover {
@@ -1954,7 +1954,6 @@ html {
 		font-size: 22px;
 		width: 30px;
 		height: 30px;
-		background-color: white;
 		color: #19191a;
 		border: 1px solid #19191a;
 		border-radius: 2px;
@@ -2400,28 +2399,6 @@ html {
 }
 
 @media only screen and (max-width: 479px) {
-	.hero-section {
-		padding-top: 0px;
-		padding-bottom: 0px;
-		margin-bottom: 30px;
-	}
-
-	.hero-text p {
-		display: none;
-	}
-
-	.hero-section .set-bg {
-		background-size: contain;
-	}
-	
-	.spad {
-		padding-top: 10px;
-	}
-
-	.hero-text h1 {
-		display: none;
-	}
-
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
 	}
