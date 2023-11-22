@@ -7,8 +7,8 @@
  $currentdate = date('Y-m-d');
  echo $currentdate;
 
- $start_date = date_create('2023-06-29');
-$end_date = date_create('2024-01-1');
+ $start_date = date_create('2024-01-1');
+$end_date = date_create('2025-01-1');
 
  $interval = new DateInterval('P1D');
 

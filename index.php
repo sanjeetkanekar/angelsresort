@@ -11,19 +11,22 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
         <!-- Css Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
         <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/nice-select.css" type="text/css">
         <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="css/datetime.css" rel="stylesheet" type="text/css">
+        <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <!-- <button id="paynowBtn" title="Pay Now" data-toggle="modal" data-target="#myModal">Pay Now</button> -->
+        <button id="paynowBtn" title="Pay Now" data-toggle="modal" data-target="#myModal">Pay Now</button>
         <!-- Pay Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -35,7 +38,7 @@
                     </div>
                     <div class="modal-body">
                         <p>Pay Now and Lock in Your Reservation!</p>
-                        <img src="img/default_qrcode.png" alt="">
+                        <img src="img/qrcode.jpg" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -60,7 +63,7 @@
                 <ul>
                     <li class="active"><a class="smoothScroll" href="./index.html">Home</a></li>
                     <li><a class="smoothScroll" href="#about">About</a></li>
-                    <li><a class="smoothScroll" href="#rooms">Accomodation</a></li>
+                    <li><a class="smoothScroll" href="#rooms">Accommodations</a></li>
                     <li><a class="smoothScroll" href="#services">Facilities</a></li>
                     <li><a class="smoothScroll" href="#tariff">Tariff</a></li>
                     <li><a class="smoothScroll" href="#reservation">Reservations</a></li>
@@ -70,10 +73,10 @@
             </nav>
             <div id="mobile-menu-wrap"></div>
             <div class="top-social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-tripadvisor"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
             </div>
             <ul class="top-widget">
                 <li><img class="watsapp" src="img/whatsapp.svg" alt="">91-9822793037</li>
@@ -95,10 +98,8 @@
                         <div class="col-lg-6">
                             <div class="tn-right">
                                 <div class="top-social">
-                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
-                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -110,8 +111,8 @@
                     <div class="row">
                         <div class="col-lg-2">
                             <div class="logo">
-                                <a href="./index.html">
-                                <img src="img/logo1.svg" alt="">
+                                <a href="./index.php">
+                                <img src="img/angels_logo.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -119,9 +120,9 @@
                             <div class="nav-menu">
                                 <nav class="mainmenu sticker sticky-top">
                                     <ul>
-                                        <li class="active"><a class="smoothScroll" href="./index.html">Home</a></li>
+                                        <li class="active"><a class="smoothScroll" href="./index.php">Home</a></li>
                                         <li><a class="smoothScroll" href="#about">About</a></li>
-                                        <li><a class="smoothScroll" href="#rooms">Accomodation</a></li>
+                                        <li><a class="smoothScroll" href="#rooms">Accommodations</a></li>
                                         <li><a class="smoothScroll" href="#services">Facilities</a></li>
                                         <li><a class="smoothScroll" href="#tariff">Tariff</a></li>
                                         <li><a class="smoothScroll" href="#reservation">Reservations</a></li>
@@ -144,7 +145,6 @@
                         <div class="hero-text">
                             <h1>Angels Resort</h1>
                             <p>A Harmonious Fusion of Timeless Luxury and Urban Serenity. Immerse Yourself in Exquisite Tranquility, Embraced by the Enchanting City of Goa</p>
-                            <a href="#" class="primary-btn">Discover Now</a>
                         </div>
                     </div>
                 </div>
@@ -213,13 +213,13 @@
                             <div class="hp-room-item set-bg" data-setbg="img/standard_room.png">
                                 <div class="hr-text">
                                     <h3>Standard Room</h3>
-                                    <h2>Rs. 3500<span>/ Pernight</span></h2>
+                                    <h2>Rs. 4500<span>/ Pernight</span></h2>
                                     <table>
                                         <tbody>
                                             <!-- <tr>
                                                 <td class="r-o">Size:</td>
                                                 <td>30 ft</td>
-                                            </tr> -->
+                                                </tr> -->
                                             <tr>
                                                 <td class="r-o">Capacity:</td>
                                                 <td>Max person 3</td>
@@ -227,6 +227,10 @@
                                             <tr>
                                                 <td class="r-o">Bed:</td>
                                                 <td>King Beds</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="r-o">Breakfast:</td>
+                                                <td>Included</td>
                                             </tr>
                                             <tr>
                                                 <td class="r-o">Services:</td>
@@ -242,13 +246,13 @@
                             <div class="hp-room-item set-bg" data-setbg="img/deluxe_room.png">
                                 <div class="hr-text">
                                     <h3>Deluxe Room</h3>
-                                    <h2>Rs. 5000<span>/ Pernight</span></h2>
+                                    <h2>Rs. 5500<span>/ Pernight</span></h2>
                                     <table>
                                         <tbody>
                                             <!-- <tr>
                                                 <td class="r-o">Size:</td>
                                                 <td>30 ft</td>
-                                            </tr> -->
+                                                </tr> -->
                                             <tr>
                                                 <td class="r-o">Capacity:</td>
                                                 <td>Max person 3</td>
@@ -256,6 +260,10 @@
                                             <tr>
                                                 <td class="r-o">Bed:</td>
                                                 <td>King Beds</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="r-o">Breakfast:</td>
+                                                <td>Included</td>
                                             </tr>
                                             <tr>
                                                 <td class="r-o">Services:</td>
@@ -382,8 +390,8 @@
                                 <td height="47" class="tbldata">
                                     <div align="center">1st June- 30th Sept</div>
                                 </td>
-                                <td class="tbldata"> Rs. 3500/-</td>
-                                <td class="tbldata"> Rs. 5000/-</td>
+                                <td class="tbldata"> Rs. 4500/-</td>
+                                <td class="tbldata"> Rs. 5500/-</td>
                             </tr>
                             <tr>
                                 <td height="39" class="tbldata">
@@ -391,8 +399,8 @@
                                         Dec
                                     </div>
                                 </td>
-                                <td class="tbldata"> Rs. 3500/-</td>
-                                <td class="tbldata">Rs. 5000/-</td>
+                                <td class="tbldata"> Rs. 4500/-</td>
+                                <td class="tbldata">Rs. 5500/-</td>
                             </tr>
                             <tr>
                                 <td height="38" class="tbldata">
@@ -408,8 +416,8 @@
                                         May
                                     </div>
                                 </td>
-                                <td class="tbldata"> Rs. 3500/-</td>
-                                <td class="tbldata">Rs. 5000/-</td>
+                                <td class="tbldata"> Rs. 4500/-</td>
+                                <td class="tbldata">Rs. 5500/-</td>
                             </tr>
                             <tr>
                                 <td height="27" colspan="3" class="err">
@@ -441,12 +449,16 @@
                     <div class="col-lg-12">
                         <form action="room-details.php" method="post" class="contact-form">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-6">
+                                <div class="t-datepicker col-lg-12">
+                                    <div class="t-check-in"></div>
+                                    <div class="t-check-out"></div>
+                                </div>
+                                <!-- <div class="col-lg-6 col-sm-6">
                                     <input name="indate" value="<?php echo date("d-m-Y"); ?>" class="mydate" type="text" placeholder="Check-in Date" onfocus="(this.type='date')">
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
                                     <input name="outdate" value="<?php echo date("d-m-Y", strtotime("+1 day")); ?>"class="mydate" type="text" placeholder="Check-out Date" onfocus="(this.type='date')">
-                                </div>
+                                    </div> -->
                                 <div class="col-lg-4 col-sm-3">
                                     <select name="noadults" class="box">
                                         <option value="0">Adults</option>
@@ -498,8 +510,8 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="c-o">Address:</td>
-                                        <td>Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</td>
+                                        <td class="c-o" valign="top">Address:</td>
+                                        <td>Angels Resort, Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</td>
                                     </tr>
                                     <tr>
                                         <td class="c-o">Phone:</td>
@@ -538,47 +550,91 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/snipsalon.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/HdkQW7j74dMYYjZp6" target="_blank" class="text">Snip Salon & Spa</a>
-                        <span>190 m Away</span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/snipsalon.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/HdkQW7j74dMYYjZp6" target="_blank" class="text">Snip Salon & Spa</a>
+                            <span>190 m Away</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/mall.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/aBq41TE57FAUGBA39" target="_blank" class="text">Mall De Goa</a>
-                        <span>1.4 km Away</span>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/mall.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/aBq41TE57FAUGBA39" target="_blank" class="text">Mall De Goa</a>
+                            <span>1.4 km Away</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/mochi.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/1nLiRjZ16aLbzXKv6" target="_blank" class="text">Mochi</a>
-                        <span>190 m Away</span>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/mochi.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/1nLiRjZ16aLbzXKv6" target="_blank" class="text">Mochi</a>
+                            <span>190 m Away</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/cafebhosle.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/LWPEQzrpz26q2hFc7" target="_blank" class="text">Cafe Bhonsle</a>
-                        <span>250 m Away</span>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/cafebhosle.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/LWPEQzrpz26q2hFc7" target="_blank" class="text">Cafe Bhonsle</a>
+                            <span>250 m Away</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/burgerking.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/dwCyWL9sdmPoQWCPA" target="_blank" class="text">Burger King</a>
-                        <span>4.4 km Away</span>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/burgerking.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/dwCyWL9sdmPoQWCPA" target="_blank" class="text">Burger King</a>
+                            <span>1.4 km Away</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 nearbydiv">
-                    <img src="img/nearbyplaces/navtara.jpg" alt="">
-                    <div class="nearbyoverlay">
-                        <a href="https://goo.gl/maps/7WZv3tvB1R9Aun5B7" target="_blank" class="text">Navtara</a>
-                        <span>130 m Away</span>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/navtara.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/7WZv3tvB1R9Aun5B7" target="_blank" class="text">Navtara</a>
+                            <span>130 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/temple.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/gGNDHAmyE5upyX5m8" target="_blank" class="text">Shree Maharudra Temple</a>
+                            <span>750 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/church.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/V4UBzMews9EQFJhQ9" target="_blank" class="text">Holy Family Church</a>
+                            <span>600 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/pizzahut.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/UmUyu1t7aL54cptw8" target="_blank" class="text">Pizza Hut</a>
+                            <span>750 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/bakersstreet.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/yx6Rqb1CYkjNepxZ9" target="_blank" class="text">Bakers Street Cafe</a>
+                            <span>400 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/magsons.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/XZ7DTCknej3MP81G6" target="_blank" class="text">Magsons Supermarket</a>
+                            <span>450 m Away</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 nearbydiv">
+                        <img src="img/nearbyplaces/copperleaf.jpg" alt="">
+                        <div class="nearbyoverlay">
+                            <a href="https://goo.gl/maps/8aVXTynN2RUDkd4o7" target="_blank" class="text">Copperleaf Restaurant</a>
+                            <span>500 m Away</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -598,7 +654,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="testimonial-slider owl-carousel">
-                        <div class="ts-item">
+                            <div class="ts-item">
                                 <p>Lovely place. Rooms n service was excellent. Girish at the receptionist was the best. Always smiling n greeting people. Moreover. The owner Mr. REBELLO N his manager Mr.shankar were very good n friendly. Highly recommended n will definitely come back again.</p>
                                 <div class="ti-author">
                                     <div class="rating">
@@ -687,8 +743,8 @@
                         <div class="col-lg-4">
                             <div class="ft-about">
                                 <div class="logo">
-                                    <a href="#">
-                                    <img src="img/logo1.svg" alt="">
+                                    <a href="index.php">
+                                    <img src="img/angels_footerlogo.svg" alt="">
                                     </a>
                                 </div>
                                 <p>Indulge in Unforgettable Luxury at Angels Resort</p>
@@ -700,7 +756,7 @@
                                 <ul>
                                     <li>91-9822793037 / 91-7083394505</li>
                                     <li>angelsgoa@gmail.com</li>
-                                    <li>Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
+                                    <li>Angels Resort, Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
                                 </ul>
                             </div>
                         </div>
@@ -721,18 +777,24 @@
             <div class="copyright-option">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 text-left">
+                    <div class="col-lg-4 text-left">
+                            <div class="co-text">
+                                <p>
+                                    Powered By <a href="https://dcove.co.in/" target="_blank">DCOVE</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style="text-align:center;">
                             <div class="co-text">
                                 <p>
                                     Angels Resort &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 text-right">
+                        
+                        <div class="col-lg-4 text-right">
                             <div class="fa-social">
                                 <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
                                 <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -743,13 +805,34 @@
         <!-- Footer Section End -->
         <!-- Js Plugins -->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.usebootstrap.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/jquery.nice-select.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="js/t-datepicker.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+               // Call global the function
+               $('.t-datepicker').tDatePicker({
+                 // options here
+               });
+             });
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
     session_start();
-?>
+    ?>
 <!DOCTYPE html>
 <html lang="zxx">
     <head>
@@ -14,21 +14,46 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
         <!-- Css Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
         <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/nice-select.css" type="text/css">
         <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="css/datetime.css" rel="stylesheet" type="text/css">
+        <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
         <!-- Page Preloder -->
         <div id="preloder">
             <div class="loader"></div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="mydateModal" role="dialog">
+            <div class="modal-dialog">
+                <!--Pay Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Update Your Selection</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="contact-form">
+                        <div class="modal-body">
+                            <div class="t-datepicker col-lg-12">
+                                <div class="t-check-in"></div>
+                                <div class="t-check-out"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" name="dateupdate" class="btn btn-default" onclick="dateupdatevalue()">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <!-- Header Section Begin -->
         <header id="menu" class="header-section">
@@ -44,10 +69,10 @@
                         <div class="col-lg-6">
                             <div class="tn-right">
                                 <div class="top-social">
-                                <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
-                                <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
+                                    <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
+                                    <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +85,7 @@
                         <div class="col-lg-2">
                             <div class="logo">
                                 <a href="./index.php">
-                                <img src="img/logo1.svg" alt="">
+                                <img src="img/angels_logo.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -72,11 +97,10 @@
         <?php 
             require_once "conn.php";
             $_SESSION["booking"] = false;
-            // print_r($_POST);
-            if (isset($_POST['indate'])) {
+            if (isset($_POST['t-start'])) {
                 //post data from check availability
-                $indate = $_POST['indate'];
-                $outdate = $_POST['outdate'];
+                $indate = $_POST['t-start'];
+                $outdate = $_POST['t-end'];
                 $noadults = $_POST['noadults'];
                 $nochild = $_POST['nochild'];
                 $extrapax = $_POST['extrapax'];
@@ -174,11 +198,11 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                             <label for="">Check-in Date:</label>
-                            <input name="indate" type="date" class="mydate" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>">
+                            <input type="text" id="myindate" class="mydate" onclick="openModal()" name="t-start" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>" readonly>
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                             <label for="">Check-out Date:</label>
-                            <input name="outdate" type="date" class="mydate" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>">
+                            <input name="t-end" id="myoutdate" type="text" class="mydate" onclick="openModal()" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>" readonly>
                         </div>
                         <div class="col-lg-1 col-md-6 col-sm-6 col-xs-3">
                             <label for="">Adults:</label>
@@ -229,11 +253,11 @@
                         <div class="row">
                             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                                 <label for="">Check-in Date:</label>
-                                <input name="indate" type="date" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>">
+                                <input type="text" id="myindate1" class="mydate" onclick="openModal()" name="t-start" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["indate"]; } else { echo $indate; } ?>" readonly>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                                 <label for="">Check-out Date:</label>
-                                <input name="outdate" type="date" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>">
+                                <input name="t-end" id="myoutdate1" type="text" class="mydate" onclick="openModal()" value="<?php  if (isset($_SESSION['booking'])) {echo $_SESSION["outdate"]; } else { echo $outdate; } ?>" readonly>
                             </div>
                             <div class="col-lg-1 col-md-6 col-sm-6 col-xs-3">
                                 <label for="">Adults:</label>
@@ -281,7 +305,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 img-container">
-                        <img src="img/gallery/gallery4.jpg" alt="">
+                        <img src="img/gallery/gallery2.jpg" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="room-details-item">
@@ -339,7 +363,7 @@
                                                 <!-- <tr>
                                                     <td class="r-o">Size:</td>
                                                     <td>30 ft</td>
-                                                </tr> -->
+                                                    </tr> -->
                                                 <tr>
                                                     <td class="r-o">Capacity:</td>
                                                     <td>Max Adults 2</td>
@@ -402,8 +426,8 @@
             </div>
         </section>
         <!-- Room Details Section End -->
-                <!-- Testimonial Section Begin -->
-                <section id="testimonial" class="testimonial-section spad">
+        <!-- Testimonial Section Begin -->
+        <section id="testimonial" class="testimonial-section spad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -416,7 +440,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="testimonial-slider owl-carousel">
-                        <div class="ts-item">
+                            <div class="ts-item">
                                 <p>Lovely place. Rooms n service was excellent. Girish at the receptionist was the best. Always smiling n greeting people. Moreover. The owner Mr. REBELLO N his manager Mr.shankar were very good n friendly. Highly recommended n will definitely come back again.</p>
                                 <div class="ti-author">
                                     <div class="rating">
@@ -505,8 +529,8 @@
                         <div class="col-lg-4">
                             <div class="ft-about">
                                 <div class="logo">
-                                    <a href="#">
-                                    <img src="img/logo1.svg" alt="">
+                                    <a href="index.php">
+                                    <img src="img/angels_footerlogo.svg" alt="">
                                     </a>
                                 </div>
                                 <p>Indulge in Unforgettable Luxury at Angels Resort</p>
@@ -518,7 +542,7 @@
                                 <ul>
                                     <li>91-9822793037 / 91-7083394505</li>
                                     <li>angelsgoa@gmail.com</li>
-                                    <li>Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
+                                    <li>Angels Resort, Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
                                 </ul>
                             </div>
                         </div>
@@ -526,10 +550,10 @@
                             <div class="ft-usefullinks">
                                 <h6>Usefull Links</h6>
                                 <ul>
-                                    <li><a class="smoothScroll" href="index.php">Facilities</a></li>
-                                    <li><a class="smoothScroll" href="index.php">Accomodation</a></li>
-                                    <li><a class="smoothScroll" href="index.php">Reservations</a></li>
-                                    <li><a class="smoothScroll" href="index.php">Tariff</a></li>
+                                    <li><a class="smoothScroll" href="#services">Facilities</a></li>
+                                    <li><a class="smoothScroll" href="#rooms">Accomodation</a></li>
+                                    <li><a class="smoothScroll" href="#reservation">Reservations</a></li>
+                                    <li><a class="smoothScroll" href="#tariff">Tariff</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -539,18 +563,24 @@
             <div class="copyright-option">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 text-left">
+                    <div class="col-lg-4 text-left">
+                            <div class="co-text">
+                                <p>
+                                    Powered By <a href="https://dcove.co.in/" target="_blank">DCOVE</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style="text-align:center;">
                             <div class="co-text">
                                 <p>
                                     Angels Resort &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 text-right">
+                        
+                        <div class="col-lg-4 text-right">
                             <div class="fa-social">
                                 <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
                                 <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -561,13 +591,34 @@
         <!-- Footer Section End -->
         <!-- Js Plugins -->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.usebootstrap.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/jquery.nice-select.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="js/t-datepicker.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+               // Call global the function
+               $('.t-datepicker').tDatePicker({
+                 // options here
+               });
+             });
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script>
     </body>
 </html>

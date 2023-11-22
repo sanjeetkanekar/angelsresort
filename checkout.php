@@ -14,15 +14,17 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
         <!-- Css Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
         <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/nice-select.css" type="text/css">
         <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="css/datetime.css" rel="stylesheet" type="text/css">
+        <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -60,7 +62,7 @@
                         <div class="col-lg-2">
                             <div class="logo">
                                 <a href="./index.php">
-                                <img src="img/logo1.svg" alt="">
+                                <img src="img/angels_logo.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -101,7 +103,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <img src="img/gallery/gallery4.jpg" alt="">
+                                    <img src="img/gallery/gallery2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
@@ -200,27 +202,27 @@
             <div class="container">
                 <div class="footer-text">
                     <div class="row">
-                        <div class="col-lg-4 col-xs-12">
+                        <div class="col-lg-4">
                             <div class="ft-about">
                                 <div class="logo">
-                                    <a href="#">
-                                    <img src="img/logo1.svg" alt="">
+                                    <a href="index.php">
+                                    <img src="img/angels_footerlogo.svg" alt="">
                                     </a>
                                 </div>
                                 <p>Indulge in Unforgettable Luxury at Angels Resort</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 offset-lg-1 col-xs-8 footer-contact">
+                        <div class="col-lg-3 offset-lg-1">
                             <div class="ft-contact">
                                 <h6>Contact Us</h6>
                                 <ul>
                                     <li>91-9822793037 / 91-7083394505</li>
                                     <li>angelsgoa@gmail.com</li>
-                                    <li>Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
+                                    <li>Angels Resort, Chogm Road, Alto de Porvorim, Bardez - Goa. 403 521, INDIA.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 offset-lg-1 col-xs-4 footer-usefulllinks">
+                        <div class="col-lg-3 offset-lg-1">
                             <div class="ft-usefullinks">
                                 <h6>Usefull Links</h6>
                                 <ul>
@@ -237,18 +239,24 @@
             <div class="copyright-option">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 text-left">
+                    <div class="col-lg-4 text-left">
                             <div class="co-text">
                                 <p>
-                                    Angels Resort &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                                    Powered By <a href="https://dcove.co.in/" target="_blank">DCOVE</a>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 text-right">
+                        <div class="col-lg-4" style="text-align:center;">
+                            <div class="co-text">
+                                <p>
+                                    Angels Resort &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 text-right">
                             <div class="fa-social">
                                 <a target="_blank" href="https://www.facebook.com/pages/Angels-Resort-Goa/280846135283215"><i class="fa fa-facebook"></i></a>
-                                <!-- <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a> -->
                                 <a target="_blank" href="https://www.instagram.com/angels_resort_goa/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -259,13 +267,13 @@
         <!-- Footer Section End -->
         <!-- Js Plugins -->
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.usebootstrap.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/jquery.nice-select.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+        <script src="js/t-datepicker.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

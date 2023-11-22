@@ -14,7 +14,7 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
     $email = $_SESSION["email"] = $_POST["email"];
     $name = $_SESSION["name"] = $_POST["name"];
     $phone = $_SESSION["phone"] = $_POST["phone"];
-    $_SESSION["comments"] = $_POST["comments"];
+    $comments = $_SESSION["comments"] = $_POST["comments"];
     $payamount = $_SESSION["payableamount"] = $_POST["payableamount"];
     date_default_timezone_set('Asia/Kolkata');
     $added_on = date('Y-m-d h:i:s');
@@ -33,18 +33,32 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
         }
         if($conn -> query($updaterooms)){
             $totalperson = $_SESSION["noadults"] + $_SESSION["nochild"] + $_SESSION["extrapax"];
-            $adminemail = "info@dcove.co.in";
+            // $adminemail = "info@dcove.co.in";
+            // $mail = new PHPMailer(true);
+            // $mail->isSMTP();   
+            // $mail->SMTPSecure = 'ssl';                                         //Send using SMTP
+            // $mail->Host       = 'mail.dcove.co.in';                     //Set the SMTP server to send through
+            // $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            // $mail->Username   = 'info@dcove.co.in';                     //SMTP username
+            // $mail->Password   = 'Dc11In22$$##';                               //SMTP password
+            // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            // $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you 
+
+            // $mail->setFrom('info@dcove.co.in');
+
+            // $adminemail = "reservations@angelsgoa.com";
+            $adminemail = "angelsgoa@gmail.com";
             $mail = new PHPMailer(true);
-            $mail->isSMTP();   
+            // $mail->isSMTP();   
             $mail->SMTPSecure = 'ssl';                                         //Send using SMTP
-            $mail->Host       = 'mail.dcove.co.in';                     //Set the SMTP server to send through
+            $mail->Host       = 'mail.angelsgoa.com';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'info@dcove.co.in';                     //SMTP username
-            $mail->Password   = 'Dc11In22$$##';                               //SMTP password
+            $mail->Username   = 'reservations@angelsgoa.com';                     //SMTP username
+            $mail->Password   = 'Ang11Gel22$$';                               //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you 
 
-            $mail->setFrom('info@dcove.co.in');
+            $mail->setFrom('reservations@angelsgoa.com');
 
             $mail->addAddress($email);     //Add a recipient
             $mail->SMTPOptions = array(
@@ -72,11 +86,13 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                         <b>Number of Nights:</b> ".$_SESSION["days"]."<br>
                         <b>Room Type:</b> Standard <br>
                         <b>Number of Rooms:</b> ".$_SESSION["rooms"]."<br><br>
+                        <b>Breakfast :</b>Included<br><br>
                         <b>Traveller Details</b><br>
                         <hr>
                         <b>Number of Travellers:</b> ".$totalperson."<br>
                         <b>Number of Adults:</b> ".$_SESSION["noadults"]."<br>
-                        <b>Number of Children:</b> ".$_SESSION["nochild"]."<br><br>
+                        <b>Number of Children:</b> ".$_SESSION["nochild"]."<br>
+                        <b>Number of Extra Person:</b> ".$_SESSION["extrapax"]."<br><br>
                         <b>Room Tariff Details</b><br>
                         <hr>
                         <b>Room Tariff:</b> Rs. ".$_SESSION["roomtariff"]."<br>
@@ -103,7 +119,10 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                         <p><b>	Dear Admin,</b></p>
                         <p>The details of the booking are as follows:</p>
                         <p>
-                            <b>Customer Name:</b> ".$name."<br>
+                            <b>Guest Name:</b> ".$name."<br>
+                            <b>Guest Email:</b> ".$email."<br>
+                            <b>Guest Phone:</b> ".$phone."<br>
+                            <b>Guest Comments:</b> ".$comments."<br><br>
                             <b>Booking Details</b><br>
                             <hr>
                             <b>Booking ID:</b> ".$booking_id."<br>
@@ -111,12 +130,14 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                             <b>Check-out Date:</b> ".$emailoutdate."<br>
                             <b>Number of Nights:</b> ".$_SESSION["days"]."<br>
                             <b>Room Type:</b> Standard <br>
-                            <b>Number of Rooms:</b> ".$_SESSION["rooms"]."<br><br>
+                            <b>Number of Rooms:</b> ".$_SESSION["rooms"]."<br>
+                            <b>Breakfast :</b>Included<br><br>
                             <b>Traveller Details</b><br>
                             <hr>
                             <b>Number of Travellers:</b> ".$totalperson."<br>
                             <b>Number of Adults:</b> ".$_SESSION["noadults"]."<br>
-                            <b>Number of Children:</b> ".$_SESSION["nochild"]."<br><br>
+                            <b>Number of Children:</b> ".$_SESSION["nochild"]."<br>
+                            <b>Number of Extra Person:</b> ".$_SESSION["extrapax"]."<br><br>
                             <b>Room Tariff Details</b><br>
                             <hr>
                             <b>Room Tariff:</b> Rs. ".$_SESSION["roomtariff"]."<br>
@@ -128,6 +149,14 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                 </html>";
                 
                 $mail->addAddress($adminemail);
+                $mail->addAddress('reservations@angelsgoa.com');
+                $mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => false
+                    )
+                );
                 $mail->Send();
 
             } catch (Exception $e) {
@@ -140,8 +169,8 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+                    <title>Confirmation</title>
+                    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
                     <link rel="stylesheet" href="css/style.css" type="text/css">
                 </head>
                 <body>
@@ -168,7 +197,7 @@ if (isset($_POST["name"]) && isset($_POST["payableamount"])) {
                         </div>
                     </div>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
+                    <script src="https://cdn.usebootstrap.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                                 $('#paymentsuccessModal').modal('show');

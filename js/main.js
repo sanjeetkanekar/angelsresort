@@ -19,7 +19,7 @@
       });
 
       $(window).scroll(function() {
-        if (window.location.pathname !== '/angelsresort/gallery.html' && window.location.pathname !== '/angelsresort/index.php') {
+        if (window.location.pathname !== '/gallery.html' && window.location.pathname !== '/') {
         var scroll = $(window).scrollTop();
         var headerheight = document.getElementById('lowernav').offsetHeight;
         var nav = document.getElementById('currentsearch');
@@ -37,20 +37,20 @@
     /*------------------
         Pay Now button
     --------------------*/
-    // if(document.getElementById("paynowBtn")){
-    //     let mybutton = document.getElementById("paynowBtn");
+    if(document.getElementById("paynowBtn")){
+        let mybutton = document.getElementById("paynowBtn");
 
     // When the user scrolls down 200px from the top of the document, show the button
-    // window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction()};
 
-    // function scrollFunction() {
-    //     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    //         mybutton.style.display = "block";
-    //     } else {
-    //         mybutton.style.display = "none";
-    //     }
-    // }
-    // }
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    }
     
 
     /*------------------
@@ -78,17 +78,6 @@
     $(".canvas-close, .offcanvas-menu-overlay").on('click', function () {
         $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
         $(".offcanvas-menu-overlay").removeClass("active");
-    });
-
-    // Search model
-    $('.search-switch').on('click', function () {
-        $('.search-model').fadeIn(400);
-    });
-
-    $('.search-close-switch').on('click', function () {
-        $('.search-model').fadeOut(400, function () {
-            $('#search-input').val('');
-        });
     });
 
     /*------------------
@@ -126,13 +115,6 @@
         smartSpeed: 1200,
         nav: true,
         navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"]
-    });
-
-    /*------------------
-        Magnific Popup
-    --------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
     });
 
     /*------------------
@@ -253,3 +235,18 @@ $(function(){
     
     $('.mydate').attr('min', minDate);
 });
+
+function openModal(){
+  $("#mydateModal").modal('show');
+}
+
+function dateupdatevalue() {
+  var newindate = document.getElementsByClassName("t-input-check-in")[0].value;
+  var newoutdate = document.getElementsByClassName("t-input-check-out")[0].value;
+
+  document.getElementById("myindate").value = newindate;
+  document.getElementById("myoutdate").value = newoutdate;
+  document.getElementById("myindate1").value = newindate;
+  document.getElementById("myoutdate1").value = newoutdate;
+  $("#mydateModal").modal('hide');
+}
