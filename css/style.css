@@ -682,6 +682,10 @@ ol {
 	padding: 0 35px;
 }
 
+.aboutus-section iframe{
+	margin-top: 10%;
+}
+
 .about-text p {
 	color: #595960;
 	font-weight: 500;

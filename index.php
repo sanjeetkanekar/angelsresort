@@ -154,7 +154,7 @@
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-2.png"></div>
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-3.png"></div>
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-4.png"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-5.png"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-5.jpg"></div>
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-6.png"></div>
             </div>
         </section>
@@ -174,14 +174,15 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="about_thumb d-flex">
+                        <!-- <div class="about_thumb d-flex">
                             <div class="img_1">
                                 <img src="img/about/angels_aboutus.jpg" alt="">
                             </div>
                             <div class="img_2">
                                 <img src="img/about/angels_about.jpg" alt="">
                             </div>
-                        </div>
+                        </div> -->
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
