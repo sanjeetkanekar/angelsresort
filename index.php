@@ -183,7 +183,7 @@
                             </div>
                         </div> -->
                         <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
