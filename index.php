@@ -47,9 +47,9 @@
             </div>
         </div>
         <!-- Page Preloder -->
-        <div id="preloder">
+        <!-- <div id="preloder">
             <div class="loader"></div>
-        </div>
+        </div> -->
         <!-- Offcanvas Menu Section Begin -->
         <div class="offcanvas-menu-overlay"></div>
         <div class="canvas-open">
@@ -410,7 +410,9 @@
                                         5th Jan
                                     </div>
                                 </td>
-                                <td colspan="2" class="tbldata"> <strong>ON REQUEST</strong></td>
+                                <!-- <td colspan="2" class="tbldata"> <strong>ON REQUEST</strong></td> -->
+                                <td class="tbldata"> Rs. 6000/-</td>
+                                <td class="tbldata">ON REQUEST</td>
                             </tr>
                             <tr>
                                 <td height="37" class="tbldata">
@@ -426,7 +428,7 @@
                                     <div align="left">&nbsp;* 
                                         Prices on Room Basis <br>
                                         &nbsp;* 
-                                        Taxes as apllicable extra.
+                                        Taxes as applicable extra.
                                     </div>
                                 </td>
                             </tr>
