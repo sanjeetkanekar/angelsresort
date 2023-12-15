@@ -150,12 +150,12 @@
                 </div>
             </div>
             <div class="hero-slider owl-carousel">
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-1.png"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-2.png"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-3.png"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-4.png"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-5.jpg"></div>
-                <div class="hs-item set-bg" data-setbg="img/hero/hero-6.png"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-3.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-4.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-5.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-6.jpeg"></div>
             </div>
         </section>
         <!-- Hero Section End -->
@@ -183,7 +183,9 @@
                             </div>
                         </div> -->
                         <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                            <img src="img/aboutvideo.jpeg" alt="" class="aboutvideo">
+                            <a href="https://youtu.be/2mWs4RVazro" target="_blank">Click to view video</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +214,7 @@
                 <div class="hp-room-items">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <div class="hp-room-item set-bg" data-setbg="img/standard_room.png">
+                            <div class="hp-room-item set-bg" data-setbg="img/standard_room.jpeg">
                                 <div class="hr-text">
                                     <h3>Standard Room</h3>
                                     <h2>Rs. 4500<span>/ Pernight</span></h2>
@@ -245,7 +247,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <div class="hp-room-item set-bg" data-setbg="img/deluxe_room.png">
+                            <div class="hp-room-item set-bg" data-setbg="img/deluxe_room.jpeg">
                                 <div class="hr-text">
                                     <h3>Deluxe Room</h3>
                                     <h2>Rs. 5500<span>/ Pernight</span></h2>

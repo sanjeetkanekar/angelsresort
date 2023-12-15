@@ -676,7 +676,6 @@ ol {
 /*---------------------
   About US
 -----------------------*/
-
 .about-text {
 	text-align: center;
 	padding: 0 35px;
@@ -686,6 +685,24 @@ ol {
 	margin-top: 10%;
 }
 
+.aboutus-section img{
+	margin-top: 5%;
+}
+
+.aboutus-section a:hover {
+	color: #0081df;
+	text-decoration: underline;
+}
+
+.aboutus-section a:visited  {
+	color: #0081df;
+}
+
+.aboutus-section a {
+	text-align:center;
+	display:block;
+	margin-top: 10px;
+}
 .about-text p {
 	color: #595960;
 	font-weight: 500;

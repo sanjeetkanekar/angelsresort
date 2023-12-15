@@ -29,9 +29,9 @@
     </head>
     <body>
         <!-- Page Preloder -->
-        <div id="preloder">
+        <!-- <div id="preloder">
             <div class="loader"></div>
-        </div>
+        </div> -->
         <!-- Modal -->
         <div class="modal fade" id="mydateModal" role="dialog">
             <div class="modal-dialog">
