@@ -196,6 +196,12 @@
                 </div>
             </div>
         </div>
+        <div style="text-align: center; font-weight:bold;text-transform:capitalize;">
+             <span>For all your transportation needs download</span>
+        </div>
+        <div class="goamileslogo" style="text-align: center;margin-bottom:50px;">
+            <a href="https://www.goamiles.com/"><img src="img/goamileslogo.png" alt=""></a>
+        </div>
         <!-- checkout Section ends -->
         <!-- Footer Section Begin -->
         <footer class="footer-section">

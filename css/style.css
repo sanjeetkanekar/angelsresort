@@ -1888,11 +1888,13 @@ html {
 	transform: translate(-50%, -50%); */
 	text-align: center;
 }
-
-
 #nearby .section-title {
 	margin-bottom: 30px;
 }
+.goamileslogo img {
+	width:5%;
+}
+
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
@@ -2358,6 +2360,9 @@ html {
 /* Large Mobile: 480px */
 
 @media only screen and (max-width: 767px) {
+	.goamileslogo img {
+		width: 15%;
+	}
 	.testimonial-slider.owl-carousel .owl-nav {
 		display: none;
 	}

@@ -156,6 +156,7 @@
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-4.jpeg"></div>
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-5.jpeg"></div>
                 <div class="hs-item set-bg" data-setbg="img/hero/hero-6.jpeg"></div>
+                <div class="hs-item set-bg" data-setbg="img/hero/hero-7.jpeg"></div>
             </div>
         </section>
         <!-- Hero Section End -->
@@ -184,7 +185,9 @@
                         </div> -->
                         <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1" allow="autoplay" frameborder="0" allowfullscreen></iframe> -->
                         <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/2mWs4RVazro?si=7z8WECZf3c1qvK-b&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                            <img src="img/aboutvideo.jpeg" alt="" class="aboutvideo">
+                            <a href="https://youtu.be/2mWs4RVazro" target="_blank">
+                                <img src="img/aboutvideo.jpeg" alt="" class="aboutvideo">
+                            </a>
                             <a href="https://youtu.be/2mWs4RVazro" target="_blank">Click to view video</a>
                     </div>
                 </div>
@@ -645,6 +648,12 @@
                 </div>
             </div>
         </section>
+        <div style="text-align: center; font-weight:bold;text-transform:capitalize;">
+             <span>For all your transportation needs download</span>
+        </div>
+        <div class="goamileslogo" style="text-align: center;margin-bottom:50px;">
+            <a href="https://www.goamiles.com/"><img src="img/goamileslogo.png" alt=""></a>
+        </div>
         <!-- nearby places Section End -->
         <!-- Testimonial Section Begin -->
         <section id="testimonial" class="testimonial-section spad">
